@@ -113,7 +113,8 @@ $ rm -rf .git*
 
 # error 403 solution:"The requested URL returned error: 403 Forbidden"
 ```sh
-The error may be, the computer has saved a git username and password so if you shift to another account the error 403 will appear. Below is the solution
+The error may be, the computer has saved a git username and password so if you shift to another account the error 403 will appear.
+Below is the solution-
 - For Windows 
    - control panel > user accounts > credential manager > Windows credentials > Generic credentials
    - Next, remove the Github keys.
