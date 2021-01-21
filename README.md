@@ -110,6 +110,21 @@ $ git config --list
 $ git config --global --list
 $ rm -rf .git*
 ```
+
+# error 403 solution:"The requested URL returned error: 403 Forbidden"
+```sh
+The error may be, the computer has saved a git username and password so if you shift to another account the error 403 will appear. Below is the solution
+- For Windows 
+   - control panel > user accounts > credential manager > Windows credentials > Generic credentials
+   - Next, remove the Github keys.
+- In mac
+  - In Finder, search for the Keychain Access app.
+  - In Keychain Access, search for github.com.
+  - Find the "internet password" entry for github.com.
+  - Edit or delete the entry accordingly.
+```
+
+
 # End of lab
 
 # remote-git-repo-lab-1
