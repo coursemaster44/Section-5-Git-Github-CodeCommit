@@ -1,83 +1,6 @@
 # Section-5-Git-Github-CodeCommit
 
 
-# AWS CodeCommit : Create and set-up CodeCommit Repo- Lab
-
-**Step 1. Goto AWS Management Console>Services>Developer Tools>CodeCommit**
-
-**Step2. Click on Create Repository**
-
-**Step 3. In Repository settings give Repository name as "Sample-Node-App"**
-
-Click on Create
-
-**Step 4. Repository created successfully now Goto IAM Concole**
-
-**Step 5. Goto AWS Management Console>Services>IAM**
-
-**Step 6.Click on Users>Amit> Security credentials>HTTPS Git credentials for AWS CodeCommit**
- - Click on Generate credentials>Download Credentials
- - Click on Close
- 
-**Step 7.Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
- - Click on Clone URL>Clone HTTPS
- - Come down to Step 3:Clone the repositrory
-   - Click on Copy
-   
- **Step 8. Open Visual Studio Code>New Terminal**
- - Type the following commands
-```sh
-$ cd Documents/
-$ cd Course-Material/
-# Paste the Clone repositrory copied in Step7
-$ git clone https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/Sample-Node-App
-# Provide AWS Credentials (User name and Password)
-# After Cloning open this repository in VS Code
-# Open Terminal and check for git initialization
-$ git status
-```
-
-# End of Lab-1
-
-
-
-# AWS CodeCommit : Push Sample NodeJS App on CodeCommit Repo - Lab
-
-**Step 1. Open Visual Studio Code>New Terminal**
-- Type the following commands
-```sh
-$ touch .gitignore
-# Click on .gitignore and see two files to ignore node_modules/ & >DS_Store
-$ git status
-$ git add .
-$ git status
-$ git commit -a "first commit"
-$ git push
-```
-**Step 2. Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
-- gitignore has node_modules/ & >DS_Store
-- Click on Commits and see the first commit there
-
-**Step 3.Goto Visual Studio Code>Terminal**
-```sh
-$ cp -r ../new-node-project .
-$ rm -rf new-node-project
-$ cp -r ../new-node-project/ .
-$ git status
-# Check untracked files
-$ git add .
-$ git status
-$ git commit -m"second commit"
-$ git push
-```
-**Step 3. Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
-- Check that all files have been pushed here
-- Goto commits and see that second commit is present there
-
-
-# End of Lab-2
-
-
 # Create local git repository - Lab
 
 **Step 1. Open Terminal in Visual Studio Code**
@@ -209,4 +132,94 @@ $ cat .git/config
 $ git push
 # Refresh the github.com/teacheramitk/git-demo and see .gitignore commit
 ```
-# End of lab-2
+# End of lab
+
+
+# AWS CodeCommit : Create and set-up CodeCommit Repo- Lab
+
+**Step 1. Goto AWS Management Console>Services>Developer Tools>CodeCommit**
+
+**Step2. Click on Create Repository**
+
+**Step 3. In Repository settings give Repository name as "Sample-Node-App"**
+
+Click on Create
+
+**Step 4. Repository created successfully now Goto IAM Concole**
+
+**Step 5. Goto AWS Management Console>Services>IAM**
+
+**Step 6.Click on Users>Amit> Security credentials>HTTPS Git credentials for AWS CodeCommit**
+ - Click on Generate credentials>Download Credentials
+ - Click on Close
+ 
+**Step 7.Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
+ - Click on Clone URL>Clone HTTPS
+ - Come down to Step 3:Clone the repositrory
+   - Click on Copy
+   
+ **Step 8. Open Visual Studio Code>New Terminal**
+ - Type the following commands
+```sh
+$ cd Documents/
+$ cd Course-Material/
+# Paste the Clone repositrory copied in Step7
+$ git clone https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/Sample-Node-App
+# Provide AWS Credentials (User name and Password)
+# After Cloning open this repository in VS Code
+# Open Terminal and check for git initialization
+$ git status
+```
+
+# End of Lab
+
+
+
+# AWS CodeCommit : Push Sample NodeJS App on CodeCommit Repo - Lab
+
+**Step 1. Open Visual Studio Code>New Terminal**
+- Type the following commands
+```sh
+$ touch .gitignore
+# Click on .gitignore and see two files to ignore node_modules/ & >DS_Store
+$ git status
+$ git add .
+$ git status
+$ git commit -a "first commit"
+$ git push
+```
+**Step 2. Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
+- gitignore has node_modules/ & >DS_Store
+- Click on Commits and see the first commit there
+
+**Step 3.Goto Visual Studio Code>Terminal**
+```sh
+$ cp -r ../new-node-project .
+$ rm -rf new-node-project
+$ cp -r ../new-node-project/ .
+$ git status
+# Check untracked files
+$ git add .
+$ git status
+$ git commit -m"second commit"
+$ git push
+```
+**Step 3. Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
+- Check that all files have been pushed here
+- Goto commits and see that second commit is present there
+
+
+# End of Lab
+
+
+
+
+
+
+
+
+
+
+
+
+
