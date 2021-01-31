@@ -36,6 +36,7 @@ $ git clone https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/Sample-Node
 # Open Terminal and check for git initialization
 $ git status
 ```
+
 # End of Lab-1
 
 
@@ -72,6 +73,7 @@ $ git push
 **Step 3. Goto AWS Management Console>Services>Developer Tools>CodeCommit>Repositories>Sample-Node-App**
 - Check that all files have been pushed here
 - Goto commits and see that second commit is present there
+
 
 # End of Lab-2
 
@@ -128,6 +130,7 @@ Below is the solution-
 
 # End of lab
 
+
 # Create remote Git repository - Lab
 
 **Step 1.Goto www.github.com**
@@ -173,6 +176,8 @@ $ git push
 # Refresh the github.com/teacheramitk/git-demo and see second commit
 ```
 # End of lab
+
+
 
 # Create a remote Github repository & Clone it locally - Lab
 
