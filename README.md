@@ -1,7 +1,7 @@
 # Section-5-Git-Github-CodeCommit
 
 
-# CodeCommit-Lab1
+# AWS CodeCommit : Create and set-up CodeCommit Repo- Lab
 
 **Step 1. Goto AWS Management Console>Services>Developer Tools>CodeCommit**
 
@@ -40,7 +40,7 @@ $ git status
 
 
 
-# CodeCommit-Lab2
+# AWS CodeCommit : Push Sample NodeJS App on CodeCommit Repo - Lab
 
 **Step 1. Open Visual Studio Code>New Terminal**
 - Type the following commands
@@ -76,7 +76,7 @@ $ git push
 # End of Lab-2
 
 
-# local-git-repo-Lab
+# Create local git repository - Lab
 
 **Step 1. Open Terminal in Visual Studio Code**
 
@@ -128,7 +128,7 @@ Below is the solution-
 
 # End of lab
 
-# remote-git-repo-lab-1
+# Create remote Git repository - Lab
 
 **Step 1.Goto www.github.com**
 
@@ -174,7 +174,7 @@ $ git push
 ```
 # End of lab
 
-# Remote-git-repo-lab-2
+# Create a remote Github repository & Clone it locally - Lab
 
 **Step 1.Goto www.github.com**
 
